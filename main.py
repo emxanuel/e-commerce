@@ -1,6 +1,11 @@
 from fastapi import FastAPI
+from db import customers
 app = FastAPI()
 
-@app.get('/')
-async def root():
-    return 'hello'
+@app.get('/api/customers')
+async def select(): 
+    return customers.select()
+
+@app.get('/api/customers/{id}')
+async def sayname(id):
+    return customers.selectById(id)
