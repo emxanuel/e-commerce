@@ -1,4 +1,5 @@
 import psycopg2
+from pypika import Query
 
 db_name = 'ecommerce'
 db_user = 'postgres'
@@ -17,3 +18,4 @@ try:
     print('database connected succesfully')
 except:
     print('database not connected')
+    
