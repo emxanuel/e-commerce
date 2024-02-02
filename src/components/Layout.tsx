@@ -9,7 +9,10 @@ interface Props {
 const Layout: React.FC<Props> = ({ Element }) => {
     return (
         <div>
-            <Navbar />
+            <div className=''>
+                <Navbar />
+            </div>
+
             {<Element />}
             <Footer />
         </div>

@@ -32,7 +32,6 @@ const Slide = () => {
                 pagination={{ clickable: true }}
                 loop
                 autoplay={{ delay: 1 }}
-                effect={'coverflow'}
                 coverflowEffect={{
                     rotate: 30,
                     stretch: 0,
